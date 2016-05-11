@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Yu Yin View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="YuYinViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="28B-eI-8NE">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="scr-C9-fJi">
+                                        <rect key="frame" x="40" y="403" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="VdK-1U-NOE"/>
+                                            <constraint firstAttribute="width" constant="50" id="liz-4X-8z5"/>
+                                        </constraints>
+                                        <state key="normal" image="播放"/>
+                                        <connections>
+                                            <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="chU-QA-du6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7yf-sZ-FgH">
+                                        <rect key="frame" x="230" y="403" width="50" height="50"/>
+                                        <state key="normal" image="录音"/>
+                                        <connections>
+                                            <action selector="tape:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hrr-eQ-2qY"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="大道汜兮，其可左右。万物恃之以生而不辞，功成而不有。衣养万物而不为主，常无欲，可名于小；万物归焉而不为主，可名为大。以其终不自为大，故能成其大。 " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lLM-m0-PbJ">
+                                        <rect key="frame" x="40" y="248.5" width="240" height="128"/>
+                                        <color key="backgroundColor" red="0.80137564276322271" green="1" blue="0.96134813806183306" alpha="0.20772384751773049" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="091-uI-a64"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bj" translatesAutoresizingMaskIntoConstraints="NO" id="JES-yJ-fiI">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="199"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uwc-c2-1CU">
+                                        <rect key="frame" x="44" y="497.5" width="236" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="a80-ZE-giP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.50749445336545596" green="1" blue="0.54125494463440471" alpha="0.78573803191489366" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="JES-yJ-fiI" firstAttribute="top" secondItem="28B-eI-8NE" secondAttribute="top" id="3aV-g1-Zr8"/>
+                                    <constraint firstItem="lLM-m0-PbJ" firstAttribute="leading" secondItem="28B-eI-8NE" secondAttribute="leading" constant="40" id="4DU-4v-UGv"/>
+                                    <constraint firstItem="Uwc-c2-1CU" firstAttribute="leading" secondItem="scr-C9-fJi" secondAttribute="leading" constant="4" id="6JW-g5-YMW"/>
+                                    <constraint firstItem="7yf-sZ-FgH" firstAttribute="trailing" secondItem="lLM-m0-PbJ" secondAttribute="trailing" id="BkA-CP-So1"/>
+                                    <constraint firstItem="JES-yJ-fiI" firstAttribute="bottom" secondItem="28B-eI-8NE" secondAttribute="centerY" multiplier="0.7" id="DwT-Tk-44m"/>
+                                    <constraint firstItem="7yf-sZ-FgH" firstAttribute="bottom" secondItem="scr-C9-fJi" secondAttribute="bottom" id="Hrk-ci-sPt"/>
+                                    <constraint firstAttribute="trailing" secondItem="JES-yJ-fiI" secondAttribute="trailing" id="JXl-hD-Jw7"/>
+                                    <constraint firstItem="Uwc-c2-1CU" firstAttribute="top" secondItem="7yf-sZ-FgH" secondAttribute="bottom" multiplier="1.1" id="PBE-aC-FIt"/>
+                                    <constraint firstItem="7yf-sZ-FgH" firstAttribute="height" secondItem="scr-C9-fJi" secondAttribute="height" id="WtK-8d-8E2"/>
+                                    <constraint firstItem="7yf-sZ-FgH" firstAttribute="top" secondItem="scr-C9-fJi" secondAttribute="top" id="ZBq-u6-K5h"/>
+                                    <constraint firstItem="Uwc-c2-1CU" firstAttribute="trailing" secondItem="lLM-m0-PbJ" secondAttribute="trailing" id="bwZ-SJ-BfI"/>
+                                    <constraint firstAttribute="trailing" secondItem="lLM-m0-PbJ" secondAttribute="trailing" constant="40" id="cAY-N7-VxB"/>
+                                    <constraint firstItem="lLM-m0-PbJ" firstAttribute="top" secondItem="JES-yJ-fiI" secondAttribute="bottom" multiplier="1.25" id="eSK-VF-x3z"/>
+                                    <constraint firstItem="7yf-sZ-FgH" firstAttribute="width" secondItem="scr-C9-fJi" secondAttribute="width" id="fKS-H3-yBh"/>
+                                    <constraint firstItem="scr-C9-fJi" firstAttribute="leading" secondItem="lLM-m0-PbJ" secondAttribute="leading" id="gGP-LN-0z1"/>
+                                    <constraint firstItem="scr-C9-fJi" firstAttribute="top" secondItem="lLM-m0-PbJ" secondAttribute="bottom" multiplier="1.07" id="kqv-cf-2Ib"/>
+                                    <constraint firstItem="JES-yJ-fiI" firstAttribute="leading" secondItem="28B-eI-8NE" secondAttribute="leading" id="nIr-hS-pq6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="28B-eI-8NE" secondAttribute="bottom" id="1Ah-2X-LQ0"/>
+                            <constraint firstItem="28B-eI-8NE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6hH-Gt-LhW"/>
+                            <constraint firstAttribute="trailing" secondItem="28B-eI-8NE" secondAttribute="trailing" id="sAN-cD-b3E"/>
+                            <constraint firstItem="28B-eI-8NE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="sKh-8F-fNZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="PlayButton" destination="scr-C9-fJi" id="h9f-I8-1Nu"/>
+                        <outlet property="ShowLable" destination="Uwc-c2-1CU" id="69r-HQ-ehK"/>
+                        <outlet property="ShowText" destination="lLM-m0-PbJ" id="Uwg-AB-O9N"/>
+                        <outlet property="TapeButton" destination="7yf-sZ-FgH" id="570-SN-w6T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="330"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bj" width="360" height="200"/>
+        <image name="录音" width="104" height="104"/>
+        <image name="播放" width="110" height="110"/>
+    </resources>
+</document>
